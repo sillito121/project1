@@ -17,11 +17,11 @@ void StringAutomaton::S1(const std::string& input) {
     if(input.size()==index){
         Serr();
     }else if((input[index] != '\'')&& index != input.size()){
-        inputRead++;
-        index++;
-        if(input[index]=='\n'){
+        if(input[index] =='\n'){
             newLines++;
         }
+        inputRead++;
+        index++;
         S1(input);
     } else if (input[index] == '\''){
         inputRead++;
