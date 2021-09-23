@@ -1,5 +1,6 @@
 #ifndef LEXER_H
 #define LEXER_H
+#include <iostream>
 #include <vector>
 #include "Automaton.h"
 #include "Token.h"
@@ -7,6 +8,7 @@
 class Lexer
 {
 private:
+
     std::vector<Automaton*> automata;
     std::vector<Token*> tokens;
 
@@ -15,10 +17,13 @@ private:
     // TODO: add any other private methods here (if needed)
 
 public:
-    Lexer();
+    Lexer(std::string inFile);
     ~Lexer();
 
+
     void Run(std::string& input);
+    void ClearA();
+    void ClearT();
     
     // TODO: add other public methods here
 
