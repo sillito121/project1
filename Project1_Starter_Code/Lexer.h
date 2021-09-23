@@ -22,8 +22,7 @@ public:
 
 
     void Run(std::string& input);
-    void ClearA();
-    void ClearT();
+
     
     // TODO: add other public methods here
 

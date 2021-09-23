@@ -90,23 +90,7 @@ void Lexer::Run(std::string& input) {
         tokens[i]->toString();
     }
     std::cout<<"Total Tokens = "<< tokens.size();
-    ClearT();
-    ClearA();
 
 }
 
-void Lexer::ClearT() {
-    for(int i =0; i<tokens.size();i++){
-        delete tokens[i];
-    }
-    tokens.clear();
-
-}
-
-void Lexer::ClearA() {
-    for(int i =0; i<automata.size();i++){
-        delete automata[i];
-    }
-    automata.clear();
-}
 
