@@ -19,6 +19,10 @@ void LComAutomaton::S1(const std::string& input) {
         std::istringstream f(input);
         std::string getIt;
         std::getline(f,getIt);
+
+        if(getIt[getIt.size()-1] == '\r'){
+            getIt.erase(getIt.size()-1);
+        }
         inputRead = getIt.size();
     }
     else {

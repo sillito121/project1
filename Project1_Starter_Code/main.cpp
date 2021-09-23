@@ -5,6 +5,7 @@
 int main(int argc, char** argv) {
 
     std::string filename = argv[1];
+    //std::string filename = "test.txt";
     std::ifstream file(filename);
     std::string inputFile;
     if(!file.is_open()){
