@@ -52,12 +52,15 @@ void UndefinedAutomaton::S2(const std::string& input){
 void UndefinedAutomaton::S3(const std::string& input){
     bool defined = false;
     while (!defined && index < input.size()){
+        if(input[index]=='\n'){
+            newLines++;
+        }
         if(input[index] == ('\'')){
             defined = true;
             if(input[index+1] == '\''){
                 defined = false;
-//                inputRead++;
-//                index++;
+                inputRead++;
+                index++;
             }
         }
         if(!defined){

@@ -80,7 +80,7 @@ void Lexer::Run(std::string& input) {
         }
 
         if(input.size()!=0){
-            input.erase(input.begin(),input.begin()+maxRead);
+            input.erase(0,maxRead);
         }
     }
 
