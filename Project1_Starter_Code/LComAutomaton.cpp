@@ -41,9 +41,6 @@ void LComAutomaton::S3(const std::string& input){
     if(input.size()==index) {
         Serr();
     }else if(input[index]!= '|' && index!=input.size()){
-        if(input[index]=='\n'){
-            newLines++;
-        }
         index++;
         inputRead++;
         if(input[index]=='\n'){
