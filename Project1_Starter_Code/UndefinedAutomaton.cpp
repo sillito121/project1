@@ -40,6 +40,8 @@ void UndefinedAutomaton::S2(const std::string& input){
         }
         if(input[index]=='\n'){
             newLines++;
+            inputRead++;
+            index++;
         }
 
     }
