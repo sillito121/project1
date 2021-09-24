@@ -5,11 +5,8 @@
 
 void LComAutomaton::S0(const std::string& input) {
     if (input[index] == '#') {
-        inputRead++;
         index++;
-        if(input[index+1]=='|'){
-            S1(input);
-        }
+        S1(input);
         S2(input);
     }
     else {
@@ -53,7 +50,7 @@ void LComAutomaton::S3(const std::string& input){
     } else if (input[index] == '|'){
         inputRead++;
         if(input[index+1] == '#'){
-            inputRead+=2;
+            inputRead++;
         } else if (input[index+1]!=EOF && input[index+1] != '#'){
             index++;
             S3(input);
