@@ -23,7 +23,7 @@ void LComAutomaton::S1(const std::string& input) {
         if(getIt[getIt.size()-1] == '\r'){
             getIt.erase(getIt.size()-1);
         }
-        inputRead = getIt.size()-1;
+        inputRead = getIt.size();
     }
     else {
         Serr();
@@ -50,7 +50,7 @@ void LComAutomaton::S3(const std::string& input){
     } else if (input[index] == '|'){
         inputRead++;
         if(input[index+1] == '#'){
-            inputRead++;
+            inputRead+=2;
         } else if (input[index+1]!=EOF && input[index+1] != '#'){
             index++;
             S3(input);
