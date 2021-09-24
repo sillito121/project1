@@ -50,8 +50,8 @@ void LComAutomaton::S3(const std::string& input){
     } else if (input[index] == '|'){
         inputRead++;
         if(input[index+1] == '#'){
-            inputRead+=2;
-        } else if (input[index+1]!=EOF && input[index+1] != '#'){
+            inputRead++;
+        } else if (index != input.size() && input[index+1] != '#'){
             index++;
             S3(input);
         }
