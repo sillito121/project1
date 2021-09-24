@@ -48,9 +48,9 @@ void LComAutomaton::S3(const std::string& input){
        }
         S3(input);
     } else if (input[index] == '|'){
-        ++inputRead;
+        inputRead++;
         if(input[index+1] == '#'){
-            inputRead+=2;
+            inputRead++;
         } else if (input[index+1]!=EOF && input[index+1] != '#'){
             if(input[index+1]=='\n'){
                 newLines++;
