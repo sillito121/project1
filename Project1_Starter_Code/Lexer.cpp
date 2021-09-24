@@ -78,11 +78,13 @@ void Lexer::Run(std::string& input) {
             Token *newToken = new Token(TokenType::UNDEFINED,input.substr(0,maxRead),lineNumber);
             tokens.push_back(newToken);
         }
-        //update where current index should be
+
         if(input.size()!=0){
             input.erase(input.begin(),input.begin()+maxRead);
         }
     }
+
+
     Token *eofToken = new Token(TokenType::EOF_FILE,"", lineNumber);
     tokens.push_back(eofToken);
 

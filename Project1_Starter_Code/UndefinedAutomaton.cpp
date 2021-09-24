@@ -56,8 +56,8 @@ void UndefinedAutomaton::S3(const std::string& input){
             defined = true;
             if(input[index+1] == '\''){
                 defined = false;
-                ++inputRead;
-                ++index;
+//                inputRead++;
+//                index++;
             }
         }
         if(!defined){
