@@ -5,6 +5,7 @@
 
 void LComAutomaton::S0(const std::string& input) {
     if (input[index] == '#') {
+        inputRead++;
         index++;
         S1(input);
         S2(input);
@@ -24,9 +25,6 @@ void LComAutomaton::S1(const std::string& input) {
             getIt.erase(getIt.size()-1);
         }
         inputRead = getIt.size();
-    }
-    else {
-        Serr();
     }
 }
 void LComAutomaton::S2(const std::string& input){
