@@ -34,16 +34,13 @@ void UndefinedAutomaton::S2(const std::string& input){
                 undefined = true;
             }
         }
+        if(input[index]=='\n'){
+            newLines++;
+        }
         if(!undefined){
             inputRead++;
             index++;
         }
-        if(input[index]=='\n'){
-            newLines++;
-            inputRead++;
-            index++;
-        }
-
     }
     if(undefined){
         ++inputRead;
