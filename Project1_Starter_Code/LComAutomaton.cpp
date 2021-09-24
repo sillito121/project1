@@ -50,7 +50,7 @@ void LComAutomaton::S3(const std::string& input){
     } else if (input[index] == '|'){
         inputRead++;
         if(input[index+1] == '#'){
-            inputRead++;
+            inputRead+=2;
         } else if (input[index+1]!=EOF && input[index+1] != '#'){
             if(input[index+1]=='\n'){
                 newLines++;
