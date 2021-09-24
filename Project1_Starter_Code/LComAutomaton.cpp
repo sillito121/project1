@@ -38,14 +38,14 @@ void LComAutomaton::S2(const std::string& input){
 }
 
 void LComAutomaton::S3(const std::string& input){
-    if(input.size()==index) {
+    if(input.size() == index) {
         type = TokenType::UNDEFINED;
     }else if(input[index]!= '|' && index!=input.size()){
-        index++;
-        inputRead++;
         if(input[index]=='\n'){
             newLines++;
         }
+        index++;
+        inputRead++;
         S3(input);
     } else if (input[index] == '|'){
         inputRead++;
