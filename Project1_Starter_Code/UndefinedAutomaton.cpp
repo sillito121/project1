@@ -6,11 +6,11 @@ void UndefinedAutomaton::S0(const std::string& input) {
         index++;
         S1(input);
 
-    } else if(input[index]=='\''){
-        inputRead++;
-        index++;
-        S3(input);
-    }
+    } //else if(input[index]=='\''){
+//        inputRead++;
+//        index++;
+//        S3(input);
+   // }
     else {
         Serr();
     }

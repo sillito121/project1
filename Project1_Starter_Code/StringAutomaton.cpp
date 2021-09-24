@@ -15,7 +15,7 @@ void StringAutomaton::S0(const std::string& input) {
 
 void StringAutomaton::S1(const std::string& input) {
     if(input.size()==index){
-        Serr();
+        type = TokenType::UNDEFINED;
     }else if((input[index] != '\'')&& index != input.size()){
         if(input[index] =='\n'){
             newLines++;
