@@ -48,10 +48,10 @@ void LComAutomaton::S3(const std::string& input){
         inputRead++;
         S3(input);
     } else if (input[index] == '|'){
-        inputRead++;
         if(input[index+1] == '#'){
-            inputRead++;
+            inputRead+=2;
         } else if (input[index+1]!=EOF && input[index+1] != '#'){
+            inputRead++;
             index++;
             S3(input);
         }
