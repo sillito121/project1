@@ -44,5 +44,4 @@ add_executable(Project1_Starter_Code
         StringAutomaton.h
         LComAutomaton.cpp
         LComAutomaton.h
-        UndefinedAutomaton.cpp
-        UndefinedAutomaton.h)
+        )

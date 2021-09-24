@@ -15,7 +15,6 @@
 #include "IDAutomaton.h"
 #include "StringAutomaton.h"
 #include "LComAutomaton.h"
-#include "UndefinedAutomaton.h"
 
 
 Lexer::Lexer(std::string inFile) {
@@ -43,7 +42,6 @@ void Lexer::CreateAutomata() {
     automata.push_back(new IDAutomaton());
     automata.push_back(new StringAutomaton());
     automata.push_back(new LComAutomaton());
-    automata.push_back(new UndefinedAutomaton());
 
     // TODO: Add the other needed automata here
 }

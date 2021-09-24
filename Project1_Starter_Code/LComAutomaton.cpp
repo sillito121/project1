@@ -39,7 +39,7 @@ void LComAutomaton::S2(const std::string& input){
 
 void LComAutomaton::S3(const std::string& input){
     if(input.size()==index) {
-        Serr();
+        type = TokenType::UNDEFINED;
     }else if(input[index]!= '|' && index!=input.size()){
         index++;
         inputRead++;
