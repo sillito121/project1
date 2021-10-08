@@ -38,6 +38,8 @@ public:
     // TODO: add other needed methods
     std::string tokenToString(TokenType type);
     void toString();
+    TokenType getType();
+    std::string getDescrip();
 
 };
 

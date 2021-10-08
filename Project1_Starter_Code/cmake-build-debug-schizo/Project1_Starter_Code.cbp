@@ -111,6 +111,12 @@
 		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/CommaAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
+		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/DatalogProgram.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/DatalogProgram.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
 		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/FactsAutomaton.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
@@ -147,10 +153,28 @@
 		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/MultiplyAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
+		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/Parameter.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/Parameter.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/Parser.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/Parser.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
 		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/PeriodAutomaton.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/PeriodAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/Predicate.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/Predicate.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/Q_MarkAutomaton.cpp">
@@ -193,12 +217,6 @@
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/Token.h">
-			<Option target="Project1_Starter_Code"/>
-		</Unit>
-		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/UndefinedAutomaton.cpp">
-			<Option target="Project1_Starter_Code"/>
-		</Unit>
-		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/UndefinedAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/main.cpp">

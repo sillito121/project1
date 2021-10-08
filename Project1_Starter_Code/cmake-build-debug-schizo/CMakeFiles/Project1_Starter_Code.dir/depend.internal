@@ -21,6 +21,12 @@ CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.o
  /users/guest/b/bsillit2/CS236/Fall 2021/CommaAutomaton.cpp
  /users/guest/b/bsillit2/CS236/Fall 2021/CommaAutomaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/Token.h
+CMakeFiles/Project1_Starter_Code.dir/DatalogProgram.cpp.o
+ /users/guest/b/bsillit2/CS236/Fall 2021/DatalogProgram.cpp
+ /users/guest/b/bsillit2/CS236/Fall 2021/DatalogProgram.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/Parameter.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/Predicate.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/Token.h
 CMakeFiles/Project1_Starter_Code.dir/FactsAutomaton.cpp.o
  /users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/FactsAutomaton.cpp
@@ -47,6 +53,7 @@ CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o
  /users/guest/b/bsillit2/CS236/Fall 2021/ColonAutomaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/ColonDashAutomaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/CommaAutomaton.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/DatalogProgram.h
  /users/guest/b/bsillit2/CS236/Fall 2021/FactsAutomaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/IDAutomaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/LComAutomaton.h
@@ -54,7 +61,10 @@ CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o
  /users/guest/b/bsillit2/CS236/Fall 2021/Lexer.cpp
  /users/guest/b/bsillit2/CS236/Fall 2021/Lexer.h
  /users/guest/b/bsillit2/CS236/Fall 2021/MultiplyAutomaton.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/Parameter.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/Parser.h
  /users/guest/b/bsillit2/CS236/Fall 2021/PeriodAutomaton.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/Predicate.h
  /users/guest/b/bsillit2/CS236/Fall 2021/Q_MarkAutomaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/QueriesAutomaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/Right_ParenAutomaton.h
@@ -62,16 +72,31 @@ CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o
  /users/guest/b/bsillit2/CS236/Fall 2021/SchemesAutomaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/StringAutomaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/Token.h
- /users/guest/b/bsillit2/CS236/Fall 2021/UndefinedAutomaton.h
 CMakeFiles/Project1_Starter_Code.dir/MultiplyAutomaton.cpp.o
  /users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/MultiplyAutomaton.cpp
  /users/guest/b/bsillit2/CS236/Fall 2021/MultiplyAutomaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/Token.h
+CMakeFiles/Project1_Starter_Code.dir/Parameter.cpp.o
+ /users/guest/b/bsillit2/CS236/Fall 2021/Parameter.cpp
+ /users/guest/b/bsillit2/CS236/Fall 2021/Parameter.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/Token.h
+CMakeFiles/Project1_Starter_Code.dir/Parser.cpp.o
+ /users/guest/b/bsillit2/CS236/Fall 2021/DatalogProgram.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/Parameter.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/Parser.cpp
+ /users/guest/b/bsillit2/CS236/Fall 2021/Parser.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/Predicate.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/Token.h
 CMakeFiles/Project1_Starter_Code.dir/PeriodAutomaton.cpp.o
  /users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/PeriodAutomaton.cpp
  /users/guest/b/bsillit2/CS236/Fall 2021/PeriodAutomaton.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/Token.h
+CMakeFiles/Project1_Starter_Code.dir/Predicate.cpp.o
+ /users/guest/b/bsillit2/CS236/Fall 2021/Parameter.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/Predicate.cpp
+ /users/guest/b/bsillit2/CS236/Fall 2021/Predicate.h
  /users/guest/b/bsillit2/CS236/Fall 2021/Token.h
 CMakeFiles/Project1_Starter_Code.dir/Q_MarkAutomaton.cpp.o
  /users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
@@ -106,11 +131,6 @@ CMakeFiles/Project1_Starter_Code.dir/StringAutomaton.cpp.o
 CMakeFiles/Project1_Starter_Code.dir/Token.cpp.o
  /users/guest/b/bsillit2/CS236/Fall 2021/Token.cpp
  /users/guest/b/bsillit2/CS236/Fall 2021/Token.h
-CMakeFiles/Project1_Starter_Code.dir/UndefinedAutomaton.cpp.o
- /users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
- /users/guest/b/bsillit2/CS236/Fall 2021/Token.h
- /users/guest/b/bsillit2/CS236/Fall 2021/UndefinedAutomaton.cpp
- /users/guest/b/bsillit2/CS236/Fall 2021/UndefinedAutomaton.h
 CMakeFiles/Project1_Starter_Code.dir/main.cpp.o
  /users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/Lexer.h

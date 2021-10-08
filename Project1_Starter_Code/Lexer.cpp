@@ -15,6 +15,7 @@
 #include "IDAutomaton.h"
 #include "StringAutomaton.h"
 #include "LComAutomaton.h"
+#include "Parser.h"
 
 
 Lexer::Lexer(std::string inFile) {
@@ -86,11 +87,13 @@ void Lexer::Run(std::string& input) {
     Token *eofToken = new Token(TokenType::EOF_FILE,"", lineNumber);
     tokens.push_back(eofToken);
 
-    for(unsigned int i=0;i<tokens.size();i++){
-        tokens[i]->toString();
-    }
-    std::cout<<"Total Tokens = "<< tokens.size();
+//    for(unsigned int i=0;i<tokens.size();i++){
+//        tokens[i]->toString();
+//    }
+//    std::cout<<"Total Tokens = "<< tokens.size()<<std::endl;
 
+     Parser *parser = new Parser(tokens);
+     parser->parse();
 }
 
 

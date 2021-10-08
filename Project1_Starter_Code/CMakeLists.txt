@@ -1,5 +1,6 @@
-cmake_minimum_required(VERSION 3.16.3)
 project(Project1_Starter_Code)
+cmake_minimum_required(VERSION 3.16.3)
+
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -44,4 +45,13 @@ add_executable(Project1_Starter_Code
         StringAutomaton.h
         LComAutomaton.cpp
         LComAutomaton.h
-        )
+        Parser.cpp
+        Parser.h
+        DatalogProgram.cpp
+        DatalogProgram.h
+        Parameter.cpp
+        Parameter.h
+        Predicate.cpp
+        Predicate.h
+        Rule.cpp
+        Rule.h)

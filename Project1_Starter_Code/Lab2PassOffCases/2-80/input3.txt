@@ -16,7 +16,7 @@ Rules:
    WhoMajor( R , M ) :- student( R , I , A , 'I love my girl!' ).
    WhoMajor( Q , M ) :-
                         student( Q , I , A , 'we' , getting , married )
-                       .
+                       .                            
 
 Queries:
    WhoMajor( 'North' , M )?

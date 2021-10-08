@@ -37,6 +37,14 @@ void Token::toString() {
     std::cout << "(" << tokenToString(type)<<",\""<<description<<"\","<<line<<")"<<std::endl;
 }
 
+TokenType Token::getType() {
+    return type;
+}
+
+std::string Token::getDescrip() {
+    return description;
+}
+
 
 
 

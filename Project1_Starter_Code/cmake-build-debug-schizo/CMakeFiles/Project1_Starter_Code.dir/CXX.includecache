@@ -6,127 +6,55 @@
 
 #IncludeRegexTransform: 
 
-/users/guest/b/bsillit2/CS236/Fall 2021/AddAutomaton.h
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
+/users/guest/b/bsillit2/CS236/Fall 2021/DatalogProgram.h
+string
+-
+vector
+-
+Predicate.h
+/users/guest/b/bsillit2/CS236/Fall 2021/Predicate.h
 
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
+/users/guest/b/bsillit2/CS236/Fall 2021/Parameter.h
+iostream
+-
+string
+-
 Token.h
 /users/guest/b/bsillit2/CS236/Fall 2021/Token.h
 
-/users/guest/b/bsillit2/CS236/Fall 2021/ColonAutomaton.h
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
+/users/guest/b/bsillit2/CS236/Fall 2021/Parser.cpp
+Parser.h
+/users/guest/b/bsillit2/CS236/Fall 2021/Parser.h
 
-/users/guest/b/bsillit2/CS236/Fall 2021/ColonDashAutomaton.h
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/CommaAutomaton.h
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/FactsAutomaton.h
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/IDAutomaton.h
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/LComAutomaton.h
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/Left_ParenAutomaton.h
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/Lexer.cpp
-Lexer.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Lexer.h
-ColonAutomaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/ColonAutomaton.h
-ColonDashAutomaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/ColonDashAutomaton.h
-CommaAutomaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/CommaAutomaton.h
-PeriodAutomaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/PeriodAutomaton.h
-Q_MarkAutomaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Q_MarkAutomaton.h
-Left_ParenAutomaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Left_ParenAutomaton.h
-Right_ParenAutomaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Right_ParenAutomaton.h
-MultiplyAutomaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/MultiplyAutomaton.h
-AddAutomaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/AddAutomaton.h
-SchemesAutomaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/SchemesAutomaton.h
-FactsAutomaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/FactsAutomaton.h
-QueriesAutomaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/QueriesAutomaton.h
-RulesAutomaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/RulesAutomaton.h
-IDAutomaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/IDAutomaton.h
-StringAutomaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/StringAutomaton.h
-LComAutomaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/LComAutomaton.h
-UndefinedAutomaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/UndefinedAutomaton.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/Lexer.h
+/users/guest/b/bsillit2/CS236/Fall 2021/Parser.h
+Token.h
+/users/guest/b/bsillit2/CS236/Fall 2021/Token.h
 iostream
 -
 vector
 -
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
+Predicate.h
+/users/guest/b/bsillit2/CS236/Fall 2021/Predicate.h
+Parameter.h
+/users/guest/b/bsillit2/CS236/Fall 2021/Parameter.h
+DatalogProgram.h
+/users/guest/b/bsillit2/CS236/Fall 2021/DatalogProgram.h
+
+/users/guest/b/bsillit2/CS236/Fall 2021/Predicate.cpp
+Predicate.h
+/users/guest/b/bsillit2/CS236/Fall 2021/Predicate.h
+
+/users/guest/b/bsillit2/CS236/Fall 2021/Predicate.h
+string
+-
+vector
+-
 Token.h
 /users/guest/b/bsillit2/CS236/Fall 2021/Token.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/MultiplyAutomaton.h
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/PeriodAutomaton.h
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/Q_MarkAutomaton.h
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/QueriesAutomaton.h
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/Right_ParenAutomaton.h
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/RulesAutomaton.h
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/SchemesAutomaton.h
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/StringAutomaton.h
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
+Parameter.h
+/users/guest/b/bsillit2/CS236/Fall 2021/Parameter.h
 
 /users/guest/b/bsillit2/CS236/Fall 2021/Token.h
 string
 -
-
-/users/guest/b/bsillit2/CS236/Fall 2021/UndefinedAutomaton.h
-Automaton.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Automaton.h
 
