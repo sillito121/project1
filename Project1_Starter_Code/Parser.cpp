@@ -81,8 +81,7 @@ void Parser::parseDatalogProgram() {
 
     if(parseTokens[index]->getType()==TokenType::EOF_FILE){
         index++;
-        std::cout<<"Success!"<<std::endl;
-        dataLog->toString();
+        Interpret();
         return;
     } else {throw parseTokens[index];}
 }
@@ -189,7 +188,7 @@ void Parser::parseRule() {
         rule = new Rule();
         parseHeadPredicate();
         rule->setHead(tempPredicate);
-    } else {throw parseTokens[index];}
+    } else {return;}
 
     if(parseTokens[index]->getType()==TokenType::COLON_DASH){
         index++;
@@ -234,7 +233,6 @@ void Parser::parsePredicate() {
     if(parseTokens[index]->getType()==TokenType::LEFT_PAREN){
         index++;
         parseParameter();
-        //tempPredicate->fill(parseTokens[index]);
         parseParameterList();
     } else {throw parseTokens[index];}
 
@@ -265,6 +263,7 @@ void Parser::parsePredicateList() {
     if(parseTokens[index]->getType()==TokenType::COMMA){
         index++;
         parsePredicate();
+        rule->pushParam(tempPredicate);
         parsePredicateList();
     } else {return;}
 
@@ -288,6 +287,13 @@ void Parser::parseQueryList() {
         dataLog->buildQueries(tempPredicate);
         parseQueryList();
     } else {return;}
+
+}
+
+void Parser::Interpret() {
+    Interpreter* interpreter = new Interpreter(dataLog);
+    interpreter->build();
+    interpreter->evaluatePredicate(dataLog->getQueries());
 
 }
 

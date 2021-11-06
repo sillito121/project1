@@ -6,55 +6,85 @@
 
 #IncludeRegexTransform: 
 
-/users/guest/b/bsillit2/CS236/Fall 2021/DatalogProgram.h
-string
--
-vector
--
-Predicate.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Predicate.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Database.cpp
+Database.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Database.h
 
-/users/guest/b/bsillit2/CS236/Fall 2021/Parameter.h
-iostream
--
-string
--
-Token.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Token.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/Parser.cpp
-Parser.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Parser.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/Parser.h
-Token.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Token.h
-iostream
--
-vector
--
-Predicate.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Predicate.h
-Parameter.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Parameter.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Database.h
 DatalogProgram.h
-/users/guest/b/bsillit2/CS236/Fall 2021/DatalogProgram.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/DatalogProgram.h
+map
+-
+Relation.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Relation.h
 
-/users/guest/b/bsillit2/CS236/Fall 2021/Predicate.cpp
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/DatalogProgram.h
+string
+-
+vector
+-
 Predicate.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Predicate.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Predicate.h
+Rule.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Rule.h
+Header.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Header.h
+Relation.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Relation.h
 
-/users/guest/b/bsillit2/CS236/Fall 2021/Predicate.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Header.h
+vector
+-
+string
+-
+iostream
+-
+Token.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Token.h
+
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Parameter.h
+iostream
+-
+string
+-
+Token.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Token.h
+
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Predicate.h
 string
 -
 vector
 -
 Token.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Token.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Token.h
 Parameter.h
-/users/guest/b/bsillit2/CS236/Fall 2021/Parameter.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Parameter.h
 
-/users/guest/b/bsillit2/CS236/Fall 2021/Token.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Relation.h
+set
+-
+Tuple.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Tuple.h
+Header.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Header.h
+
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Rule.h
 string
+-
+vector
+-
+Predicate.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Predicate.h
+
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Token.h
+string
+-
+
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Tuple.h
+vector
+-
+string
+-
+iostream
 -
 

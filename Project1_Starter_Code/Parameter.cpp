@@ -2,6 +2,7 @@
 
 Parameter::Parameter(Token *token) {
     setParameter(token);
+    this->token=token;
 }
 
 void Parameter::setParameter(Token* token) {
@@ -16,3 +17,12 @@ void Parameter::toString() {
 std::string Parameter::getString() {
     return parameter;
 }
+
+bool Parameter::isConstant() {
+    bool constant = false;
+    if(token->getType() == TokenType::STRING){
+        constant = true;
+    }
+    return constant;
+}
+

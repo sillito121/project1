@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/users/guest/b/bsillit2/CS236/Fall 2021"
+CMAKE_SOURCE_DIR = "/users/guest/b/bsillit2/CS236/Fall 2021/project2"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/users/guest/b/bsillit2/CS236/Fall 2021/cmake-build-debug-schizo"
+CMAKE_BINARY_DIR = "/users/guest/b/bsillit2/CS236/Fall 2021/project2/cmake-build-debug-schizo"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/users/guest/b/bsillit2/CS236/Fall 2021/cmake-build-debug-schizo/CMakeFiles" "/users/guest/b/bsillit2/CS236/Fall 2021/cmake-build-debug-schizo/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/users/guest/b/bsillit2/CS236/Fall 2021/project2/cmake-build-debug-schizo/CMakeFiles" "/users/guest/b/bsillit2/CS236/Fall 2021/project2/cmake-build-debug-schizo/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/users/guest/b/bsillit2/CS236/Fall 2021/cmake-build-debug-schizo/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/users/guest/b/bsillit2/CS236/Fall 2021/project2/cmake-build-debug-schizo/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -231,6 +231,33 @@ CommaAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.s
 .PHONY : CommaAutomaton.cpp.s
 
+Database.o: Database.cpp.o
+
+.PHONY : Database.o
+
+# target to build an object file
+Database.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o
+.PHONY : Database.cpp.o
+
+Database.i: Database.cpp.i
+
+.PHONY : Database.i
+
+# target to preprocess a source file
+Database.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Database.cpp.i
+.PHONY : Database.cpp.i
+
+Database.s: Database.cpp.s
+
+.PHONY : Database.s
+
+# target to generate assembly for a file
+Database.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Database.cpp.s
+.PHONY : Database.cpp.s
+
 DatalogProgram.o: DatalogProgram.cpp.o
 
 .PHONY : DatalogProgram.o
@@ -284,6 +311,33 @@ FactsAutomaton.s: FactsAutomaton.cpp.s
 FactsAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/FactsAutomaton.cpp.s
 .PHONY : FactsAutomaton.cpp.s
+
+Header.o: Header.cpp.o
+
+.PHONY : Header.o
+
+# target to build an object file
+Header.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Header.cpp.o
+.PHONY : Header.cpp.o
+
+Header.i: Header.cpp.i
+
+.PHONY : Header.i
+
+# target to preprocess a source file
+Header.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Header.cpp.i
+.PHONY : Header.cpp.i
+
+Header.s: Header.cpp.s
+
+.PHONY : Header.s
+
+# target to generate assembly for a file
+Header.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Header.cpp.s
+.PHONY : Header.cpp.s
 
 IDAutomaton.o: IDAutomaton.cpp.o
 
@@ -582,6 +636,33 @@ QueriesAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/QueriesAutomaton.cpp.s
 .PHONY : QueriesAutomaton.cpp.s
 
+Relation.o: Relation.cpp.o
+
+.PHONY : Relation.o
+
+# target to build an object file
+Relation.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Relation.cpp.o
+.PHONY : Relation.cpp.o
+
+Relation.i: Relation.cpp.i
+
+.PHONY : Relation.i
+
+# target to preprocess a source file
+Relation.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Relation.cpp.i
+.PHONY : Relation.cpp.i
+
+Relation.s: Relation.cpp.s
+
+.PHONY : Relation.s
+
+# target to generate assembly for a file
+Relation.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Relation.cpp.s
+.PHONY : Relation.cpp.s
+
 Right_ParenAutomaton.o: Right_ParenAutomaton.cpp.o
 
 .PHONY : Right_ParenAutomaton.o
@@ -608,6 +689,33 @@ Right_ParenAutomaton.s: Right_ParenAutomaton.cpp.s
 Right_ParenAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Right_ParenAutomaton.cpp.s
 .PHONY : Right_ParenAutomaton.cpp.s
+
+Rule.o: Rule.cpp.o
+
+.PHONY : Rule.o
+
+# target to build an object file
+Rule.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Rule.cpp.o
+.PHONY : Rule.cpp.o
+
+Rule.i: Rule.cpp.i
+
+.PHONY : Rule.i
+
+# target to preprocess a source file
+Rule.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Rule.cpp.i
+.PHONY : Rule.cpp.i
+
+Rule.s: Rule.cpp.s
+
+.PHONY : Rule.s
+
+# target to generate assembly for a file
+Rule.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Rule.cpp.s
+.PHONY : Rule.cpp.s
 
 RulesAutomaton.o: RulesAutomaton.cpp.o
 
@@ -717,6 +825,33 @@ Token.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Token.cpp.s
 .PHONY : Token.cpp.s
 
+Tuple.o: Tuple.cpp.o
+
+.PHONY : Tuple.o
+
+# target to build an object file
+Tuple.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Tuple.cpp.o
+.PHONY : Tuple.cpp.o
+
+Tuple.i: Tuple.cpp.i
+
+.PHONY : Tuple.i
+
+# target to preprocess a source file
+Tuple.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Tuple.cpp.i
+.PHONY : Tuple.cpp.i
+
+Tuple.s: Tuple.cpp.s
+
+.PHONY : Tuple.s
+
+# target to generate assembly for a file
+Tuple.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Tuple.cpp.s
+.PHONY : Tuple.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -765,12 +900,18 @@ help:
 	@echo "... CommaAutomaton.o"
 	@echo "... CommaAutomaton.i"
 	@echo "... CommaAutomaton.s"
+	@echo "... Database.o"
+	@echo "... Database.i"
+	@echo "... Database.s"
 	@echo "... DatalogProgram.o"
 	@echo "... DatalogProgram.i"
 	@echo "... DatalogProgram.s"
 	@echo "... FactsAutomaton.o"
 	@echo "... FactsAutomaton.i"
 	@echo "... FactsAutomaton.s"
+	@echo "... Header.o"
+	@echo "... Header.i"
+	@echo "... Header.s"
 	@echo "... IDAutomaton.o"
 	@echo "... IDAutomaton.i"
 	@echo "... IDAutomaton.s"
@@ -804,9 +945,15 @@ help:
 	@echo "... QueriesAutomaton.o"
 	@echo "... QueriesAutomaton.i"
 	@echo "... QueriesAutomaton.s"
+	@echo "... Relation.o"
+	@echo "... Relation.i"
+	@echo "... Relation.s"
 	@echo "... Right_ParenAutomaton.o"
 	@echo "... Right_ParenAutomaton.i"
 	@echo "... Right_ParenAutomaton.s"
+	@echo "... Rule.o"
+	@echo "... Rule.i"
+	@echo "... Rule.s"
 	@echo "... RulesAutomaton.o"
 	@echo "... RulesAutomaton.i"
 	@echo "... RulesAutomaton.s"
@@ -819,6 +966,9 @@ help:
 	@echo "... Token.o"
 	@echo "... Token.i"
 	@echo "... Token.s"
+	@echo "... Tuple.o"
+	@echo "... Tuple.i"
+	@echo "... Tuple.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

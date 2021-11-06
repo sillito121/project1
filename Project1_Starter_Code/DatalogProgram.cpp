@@ -22,39 +22,38 @@ void DatalogProgram::buildRules(Rule *rule) {
 void DatalogProgram::toString() {
     std::cout<<"Schemes("<<schemes.size()<<"):"<<std::endl;
     for(unsigned int i=0; i<schemes.size();i++){
-        std::cout <<"\t";
+        std::cout <<"  ";
         schemes[i]->toString();
         std::cout<<std::endl;
     }
 
     std::cout<<"Facts("<<facts.size()<<"):"<<std::endl;
     for(unsigned int i=0; i<facts.size();i++){
-        std::cout <<"\t";
+        std::cout <<"  ";
         facts[i]->toString();
-        std::cout<<std::endl;
+        std::cout<<"."<<std::endl;
     }
 
     std::cout<<"Rules("<<rules.size()<<"):"<<std::endl;
     for(unsigned int i=0; i<rules.size();i++){
-        std::cout <<"\t";
+        std::cout <<"  ";
         rules[i]->toString();
-        std::cout<<std::endl;
+        std::cout<<"."<<std::endl;
     }
 
     std::cout<<"Queries("<<queries.size()<<"):"<<std::endl;
     for(unsigned int i=0; i<queries.size();i++){
-        std::cout <<"\t";
+        std::cout <<"  ";
         queries[i]->toString();
-        std::cout<<std::endl;
+        std::cout<<"?"<<std::endl;
     }
 
     //Find the Domain size
     sortFacts();
     std::cout<<"Domain("<< domain.size()<<"):"<<std::endl;
     for(unsigned int i=0; i<domain.size();i++){
-        std::cout<<"\t"<<domain[i]<<std::endl;
+        std::cout<<"  "<<domain[i]<<std::endl;
     }
-
 }
 
 void DatalogProgram::sortFacts() {
@@ -68,6 +67,7 @@ void DatalogProgram::sortFacts() {
     for(unsigned int i=0; i<domain.size();i++){
         if(domain[i]==domain[i+1]){
             domain.erase(domain.begin()+i, domain.begin()+(i+1));
+            i--;
         }
     }
 
@@ -78,6 +78,18 @@ void DatalogProgram::makeDomain(Predicate* fact) {
     for(unsigned int i=0; i<partDom.size();i++){
         domain.push_back(partDom[i]);
     }
+}
+
+std::vector<Predicate *> DatalogProgram::getSchemes() {
+    return schemes;
+}
+
+std::vector<Predicate *> DatalogProgram::getFacts() {
+    return facts;
+}
+
+std::vector<Predicate *> DatalogProgram::getQueries() {
+    return queries;
 }
 
 

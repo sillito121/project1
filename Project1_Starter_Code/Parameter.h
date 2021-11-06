@@ -12,6 +12,7 @@
 class Parameter {
 private:
     std::string parameter;
+    Token* token;
 public:
     Parameter(Token* token);
     Parameter(){};
@@ -19,7 +20,9 @@ public:
     void setParameter(Token* token);
     void toString();
     std::string getString();
+    bool isConstant();
+
 };
 
 
-#endif //PROJECT1_STARTER_CODE_PARAMETER_H
+#endif //PARAMETER_H

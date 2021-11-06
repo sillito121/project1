@@ -10,7 +10,7 @@ Predicate::Predicate(Token* token) {
 }
 
 void Predicate::setPredicate(Token* token) {
-    std::string name= token->getDescrip();
+    std::string name = token->getDescrip();
     this->name = name;
 }
 
@@ -45,6 +45,14 @@ std::vector<std::string> Predicate::getString() {
     }
 
     return stringList;
+}
+
+std::string Predicate::getName() {
+    return name;
+}
+
+std::vector<Parameter *> Predicate::getParameters() {
+    return parameters;
 }
 
 

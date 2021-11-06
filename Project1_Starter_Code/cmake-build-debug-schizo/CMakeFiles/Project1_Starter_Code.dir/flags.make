@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/users/guest/b/bsillit2/CS236/Fall 2021/." 
+CXX_INCLUDES = -I"/users/guest/b/bsillit2/CS236/Fall 2021/project2/." 
 

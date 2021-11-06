@@ -87,11 +87,6 @@ void Lexer::Run(std::string& input) {
     Token *eofToken = new Token(TokenType::EOF_FILE,"", lineNumber);
     tokens.push_back(eofToken);
 
-//    for(unsigned int i=0;i<tokens.size();i++){
-//        tokens[i]->toString();
-//    }
-//    std::cout<<"Total Tokens = "<< tokens.size()<<std::endl;
-
      Parser *parser = new Parser(tokens);
      parser->parse();
 }

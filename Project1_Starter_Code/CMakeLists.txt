@@ -54,4 +54,14 @@ add_executable(Project1_Starter_Code
         Predicate.cpp
         Predicate.h
         Rule.cpp
-        Rule.h)
+        Rule.h
+        Tuple.cpp
+        Tuple.h
+        Header.cpp
+        Header.h
+        Relation.cpp
+        Relation.h
+        DataBase.cpp
+        DataBase.h
+        Interpreter.cpp
+        Interpreter.h)

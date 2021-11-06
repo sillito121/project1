@@ -8,7 +8,8 @@
 #include <vector>
 #include "Predicate.h"
 #include "Rule.h"
-
+#include "Header.h"
+#include "Relation.h"
 
 class DatalogProgram {
 public:
@@ -17,6 +18,12 @@ public:
     void buildFacts(Predicate* predicate);
     void buildQueries(Predicate* predicate);
     void buildRules(Rule* rule);
+    void buildDatabase();
+    std::vector<Predicate*> getSchemes();
+    std::vector<Predicate*> getFacts();
+    std::vector<Predicate*> getQueries();
+
+
 
 
 private:
@@ -25,8 +32,11 @@ private:
     std::vector<Predicate*> queries;
     std::vector<Rule*> rules;
     std::vector<std::string> domain;
+
     void makeDomain(Predicate* fact);
     void sortFacts();
+
+
 
 };
 

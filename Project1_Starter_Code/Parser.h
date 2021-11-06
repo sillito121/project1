@@ -7,6 +7,7 @@
 #include "Parameter.h"
 #include "DatalogProgram.h"
 #include "Rule.h"
+#include "Interpreter.h"
 
 class Parser
 {
@@ -33,6 +34,7 @@ private:
     void parseStringList();
     void parseIdList();
     void parseParameter();
+    void Interpret();
 
 public:
     Parser(std::vector<Token*> tokens);
