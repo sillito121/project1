@@ -70,7 +70,7 @@ void Relation::select(unsigned int i, unsigned int j, std::string variable) {
         }
     }
     rename(i,variable);
-    project(j);
+    project(i);
 }
 void Relation::rename(unsigned int i, std::string variable) {
     header->rename(i,variable);
