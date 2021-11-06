@@ -18,7 +18,7 @@ public:
 
     void toString();
     void toString(int i);
-    int size();
+    unsigned int size();
     void rename(unsigned int i,std::string variable);
     void project(unsigned int i);
     bool checkSelect(std::string varCheck);

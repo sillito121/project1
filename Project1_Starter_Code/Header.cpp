@@ -18,7 +18,7 @@ void Header::toString(int i) {
 
 }
 
-int Header::size() {
+unsigned int Header::size() {
     return attributes.size();
 }
 
