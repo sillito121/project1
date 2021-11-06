@@ -19,6 +19,9 @@ void Relation::toString() {
     std::set<Tuple>::iterator setItr = tuples.begin();
     for (unsigned int i = 0; i < tuples.size(); i++){
         Tuple tempTuple = *setItr;
+        if(tempTuple.valSize() == 0){
+            return;
+        }
         std::cout<<"  ";
         for (unsigned int j = 0; j < header->size(); j++){
             header->toString(j);

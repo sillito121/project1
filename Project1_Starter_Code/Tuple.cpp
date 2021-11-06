@@ -30,3 +30,7 @@ void Tuple::toString(int i) {
 void Tuple::project(int i) {
     values.erase(values.begin()+i);
 }
+
+unsigned int Tuple::valSize() {
+    return values.size();
+}

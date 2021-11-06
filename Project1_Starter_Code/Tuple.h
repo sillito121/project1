@@ -16,6 +16,7 @@ public:
     bool operator< (const Tuple &rhs) const{
         return values < rhs.values;
     }
+    unsigned int valSize();
     void toString(int i);
     void project(int i);
 };
