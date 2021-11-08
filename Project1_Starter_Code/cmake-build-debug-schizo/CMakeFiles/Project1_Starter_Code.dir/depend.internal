@@ -21,9 +21,9 @@ CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.o
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/CommaAutomaton.cpp
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/CommaAutomaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/Token.h
-CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o
- /users/guest/b/bsillit2/CS236/Fall 2021/project2/Database.cpp
- /users/guest/b/bsillit2/CS236/Fall 2021/project2/Database.h
+CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o
+ /users/guest/b/bsillit2/CS236/Fall 2021/project2/DataBase.cpp
+ /users/guest/b/bsillit2/CS236/Fall 2021/project2/DataBase.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/DatalogProgram.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/Header.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/Parameter.h
@@ -56,6 +56,18 @@ CMakeFiles/Project1_Starter_Code.dir/IDAutomaton.cpp.o
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/IDAutomaton.cpp
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/IDAutomaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/Token.h
+CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o
+ /users/guest/b/bsillit2/CS236/Fall 2021/project2/DataBase.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/project2/DatalogProgram.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/project2/Header.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/project2/Interpreter.cpp
+ /users/guest/b/bsillit2/CS236/Fall 2021/project2/Interpreter.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/project2/Parameter.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/project2/Predicate.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/project2/Relation.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/project2/Rule.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/project2/Token.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/project2/Tuple.h
 CMakeFiles/Project1_Starter_Code.dir/LComAutomaton.cpp.o
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/Automaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/LComAutomaton.cpp
@@ -72,10 +84,12 @@ CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/ColonAutomaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/ColonDashAutomaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/CommaAutomaton.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/project2/DataBase.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/DatalogProgram.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/FactsAutomaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/Header.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/IDAutomaton.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/project2/Interpreter.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/LComAutomaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/Left_ParenAutomaton.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/Lexer.cpp
@@ -105,8 +119,10 @@ CMakeFiles/Project1_Starter_Code.dir/Parameter.cpp.o
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/Parameter.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/Token.h
 CMakeFiles/Project1_Starter_Code.dir/Parser.cpp.o
+ /users/guest/b/bsillit2/CS236/Fall 2021/project2/DataBase.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/DatalogProgram.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/Header.h
+ /users/guest/b/bsillit2/CS236/Fall 2021/project2/Interpreter.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/Parameter.h
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/Parser.cpp
  /users/guest/b/bsillit2/CS236/Fall 2021/project2/Parser.h

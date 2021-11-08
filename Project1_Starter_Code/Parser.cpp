@@ -188,7 +188,7 @@ void Parser::parseRule() {
         rule = new Rule();
         parseHeadPredicate();
         rule->setHead(tempPredicate);
-    } else {return;}
+    } else {throw parseTokens[index];}
 
     if(parseTokens[index]->getType()==TokenType::COLON_DASH){
         index++;

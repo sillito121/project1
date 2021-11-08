@@ -25,8 +25,6 @@ public:
 private:
     DatalogProgram *data;
     DataBase* dataBase;
-
-    Header *tempHeader;
     Tuple tempTuple;
     std::vector<Relation*> relations;
     std::vector<Predicate*> schemes;

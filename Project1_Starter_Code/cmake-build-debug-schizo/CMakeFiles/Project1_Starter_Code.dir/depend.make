@@ -21,16 +21,16 @@ CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.o: ../CommaAutomaton.cpp
 CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.o: ../CommaAutomaton.h
 CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.o: ../Token.h
 
-CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o: ../Database.cpp
-CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o: ../Database.h
-CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o: ../DatalogProgram.h
-CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o: ../Header.h
-CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o: ../Parameter.h
-CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o: ../Predicate.h
-CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o: ../Relation.h
-CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o: ../Rule.h
-CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o: ../Token.h
-CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o: ../Tuple.h
+CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o: ../DataBase.cpp
+CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o: ../DataBase.h
+CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o: ../DatalogProgram.h
+CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o: ../Header.h
+CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o: ../Parameter.h
+CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o: ../Predicate.h
+CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o: ../Relation.h
+CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o: ../Rule.h
+CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o: ../Token.h
+CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o: ../Tuple.h
 
 CMakeFiles/Project1_Starter_Code.dir/DatalogProgram.cpp.o: ../DatalogProgram.cpp
 CMakeFiles/Project1_Starter_Code.dir/DatalogProgram.cpp.o: ../DatalogProgram.h
@@ -56,6 +56,18 @@ CMakeFiles/Project1_Starter_Code.dir/IDAutomaton.cpp.o: ../IDAutomaton.cpp
 CMakeFiles/Project1_Starter_Code.dir/IDAutomaton.cpp.o: ../IDAutomaton.h
 CMakeFiles/Project1_Starter_Code.dir/IDAutomaton.cpp.o: ../Token.h
 
+CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o: ../DataBase.h
+CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o: ../DatalogProgram.h
+CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o: ../Header.h
+CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o: ../Interpreter.cpp
+CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o: ../Interpreter.h
+CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o: ../Parameter.h
+CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o: ../Predicate.h
+CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o: ../Relation.h
+CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o: ../Rule.h
+CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o: ../Token.h
+CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o: ../Tuple.h
+
 CMakeFiles/Project1_Starter_Code.dir/LComAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/Project1_Starter_Code.dir/LComAutomaton.cpp.o: ../LComAutomaton.cpp
 CMakeFiles/Project1_Starter_Code.dir/LComAutomaton.cpp.o: ../LComAutomaton.h
@@ -71,10 +83,12 @@ CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../Automaton.h
 CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../ColonAutomaton.h
 CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../ColonDashAutomaton.h
 CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../CommaAutomaton.h
+CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../DataBase.h
 CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../DatalogProgram.h
 CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../FactsAutomaton.h
 CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../Header.h
 CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../IDAutomaton.h
+CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../Interpreter.h
 CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../LComAutomaton.h
 CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../Left_ParenAutomaton.h
 CMakeFiles/Project1_Starter_Code.dir/Lexer.cpp.o: ../Lexer.cpp
@@ -104,8 +118,10 @@ CMakeFiles/Project1_Starter_Code.dir/Parameter.cpp.o: ../Parameter.cpp
 CMakeFiles/Project1_Starter_Code.dir/Parameter.cpp.o: ../Parameter.h
 CMakeFiles/Project1_Starter_Code.dir/Parameter.cpp.o: ../Token.h
 
+CMakeFiles/Project1_Starter_Code.dir/Parser.cpp.o: ../DataBase.h
 CMakeFiles/Project1_Starter_Code.dir/Parser.cpp.o: ../DatalogProgram.h
 CMakeFiles/Project1_Starter_Code.dir/Parser.cpp.o: ../Header.h
+CMakeFiles/Project1_Starter_Code.dir/Parser.cpp.o: ../Interpreter.h
 CMakeFiles/Project1_Starter_Code.dir/Parser.cpp.o: ../Parameter.h
 CMakeFiles/Project1_Starter_Code.dir/Parser.cpp.o: ../Parser.cpp
 CMakeFiles/Project1_Starter_Code.dir/Parser.cpp.o: ../Parser.h

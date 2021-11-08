@@ -27,7 +27,7 @@ void Tuple::toString(int i) {
 
 }
 
-void Tuple::project(int i) {
+void Tuple::projectTuple(int i) {
     values.erase(values.begin()+i);
 }
 

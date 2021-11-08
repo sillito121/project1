@@ -29,7 +29,7 @@ public:
     void select(unsigned int i, unsigned int j, std::string variable);
     void rename(unsigned int i, std::string variable);
     void project(unsigned int i);
-    void projectVec(std::vector<int> markPlace);
+    void projectVec(std::vector<int> markPlace, int deleter);
     bool checkSelect(std::string varCheck);
     int matchIndex(std::string varCheck);
 

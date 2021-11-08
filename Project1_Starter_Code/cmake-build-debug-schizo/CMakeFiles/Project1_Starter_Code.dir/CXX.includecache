@@ -6,17 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/users/guest/b/bsillit2/CS236/Fall 2021/project2/Database.cpp
-Database.h
-/users/guest/b/bsillit2/CS236/Fall 2021/project2/Database.h
-
-/users/guest/b/bsillit2/CS236/Fall 2021/project2/Database.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/DataBase.h
 DatalogProgram.h
 /users/guest/b/bsillit2/CS236/Fall 2021/project2/DatalogProgram.h
-map
--
 Relation.h
 /users/guest/b/bsillit2/CS236/Fall 2021/project2/Relation.h
+map
+-
+iostream
+-
 
 /users/guest/b/bsillit2/CS236/Fall 2021/project2/DatalogProgram.h
 string
@@ -41,6 +39,26 @@ iostream
 -
 Token.h
 /users/guest/b/bsillit2/CS236/Fall 2021/project2/Token.h
+
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Interpreter.cpp
+Interpreter.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Interpreter.h
+
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Interpreter.h
+DatalogProgram.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/DatalogProgram.h
+iostream
+-
+Header.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Header.h
+Tuple.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Tuple.h
+Relation.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Relation.h
+Predicate.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/Predicate.h
+DataBase.h
+/users/guest/b/bsillit2/CS236/Fall 2021/project2/DataBase.h
 
 /users/guest/b/bsillit2/CS236/Fall 2021/project2/Parameter.h
 iostream

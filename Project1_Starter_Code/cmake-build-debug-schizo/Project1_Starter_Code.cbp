@@ -111,10 +111,10 @@
 		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/project2/CommaAutomaton.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/project2/Database.cpp">
+		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/project2/DataBase.cpp">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
-		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/project2/Database.h">
+		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/project2/DataBase.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/project2/DatalogProgram.cpp">
@@ -139,6 +139,12 @@
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/project2/IDAutomaton.h">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/project2/Interpreter.cpp">
+			<Option target="Project1_Starter_Code"/>
+		</Unit>
+		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/project2/Interpreter.h">
 			<Option target="Project1_Starter_Code"/>
 		</Unit>
 		<Unit filename="/users/guest/b/bsillit2/CS236/Fall 2021/project2/LComAutomaton.cpp">

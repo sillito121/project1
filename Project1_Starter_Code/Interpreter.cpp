@@ -20,7 +20,7 @@ void Interpreter::build() {
 void Interpreter::buildRelation() {
     schemes=data->getSchemes();
     for(unsigned int i=0; i<schemes.size();i++){
-        tempHeader = new Header(schemes[i]->getString());
+        Header* tempHeader = new Header(schemes[i]->getString());
         relations.push_back(new Relation(tempHeader,schemes[i]->getName()));
     }
     buildTuples();
@@ -79,12 +79,13 @@ Relation* Interpreter::evaluatePredicate(Predicate *query) {
                 //markPlace.erase(markPlace.begin()+i);
                 deleteIndex++;
             }else{
-                evalName->rename(i, parameters[i]->getString());
+                int rVal = i-deleteIndex;
+                evalName->rename(rVal, parameters[i]->getString());
             }
         }
     }
-    //project remaining constants
-    evalName->projectVec(markPlace);
+    //projectHeader remaining constants
+    evalName->projectVec(markPlace, deleteIndex);
     return evalName;
 }
 

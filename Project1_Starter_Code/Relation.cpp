@@ -82,12 +82,12 @@ void Relation::project(unsigned int i) {
 
     while(itr != tuples.end()){
         Tuple temp = *itr;
-        temp.project(i);
+        temp.projectTuple(i);
         projectTuple.insert(temp);
         itr++;
     }
     tuples = projectTuple;
-    header->project(i);
+    header->projectHeader(i);
 }
 
 bool Relation::checkSelect(std::string varCheck) {
@@ -100,11 +100,12 @@ int Relation::matchIndex(std::string varCheck) {
     return index;
 }
 
-void Relation::projectVec(std::vector<int> markPlace) {
+void Relation::projectVec(std::vector<int> markPlace, int deleter) {
+
     for(unsigned int i=0; i<markPlace.size();i++){
         //If place marked is a constant selct the columns of that constant.
         if(markPlace[i]!=0) {
-            project(i);
+            project(i-deleter);
         }
     }
 

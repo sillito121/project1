@@ -231,32 +231,32 @@ CommaAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/CommaAutomaton.cpp.s
 .PHONY : CommaAutomaton.cpp.s
 
-Database.o: Database.cpp.o
+DataBase.o: DataBase.cpp.o
 
-.PHONY : Database.o
+.PHONY : DataBase.o
 
 # target to build an object file
-Database.cpp.o:
-	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o
-.PHONY : Database.cpp.o
+DataBase.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o
+.PHONY : DataBase.cpp.o
 
-Database.i: Database.cpp.i
+DataBase.i: DataBase.cpp.i
 
-.PHONY : Database.i
+.PHONY : DataBase.i
 
 # target to preprocess a source file
-Database.cpp.i:
-	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Database.cpp.i
-.PHONY : Database.cpp.i
+DataBase.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.i
+.PHONY : DataBase.cpp.i
 
-Database.s: Database.cpp.s
+DataBase.s: DataBase.cpp.s
 
-.PHONY : Database.s
+.PHONY : DataBase.s
 
 # target to generate assembly for a file
-Database.cpp.s:
-	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Database.cpp.s
-.PHONY : Database.cpp.s
+DataBase.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.s
+.PHONY : DataBase.cpp.s
 
 DatalogProgram.o: DatalogProgram.cpp.o
 
@@ -365,6 +365,33 @@ IDAutomaton.s: IDAutomaton.cpp.s
 IDAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/IDAutomaton.cpp.s
 .PHONY : IDAutomaton.cpp.s
+
+Interpreter.o: Interpreter.cpp.o
+
+.PHONY : Interpreter.o
+
+# target to build an object file
+Interpreter.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o
+.PHONY : Interpreter.cpp.o
+
+Interpreter.i: Interpreter.cpp.i
+
+.PHONY : Interpreter.i
+
+# target to preprocess a source file
+Interpreter.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.i
+.PHONY : Interpreter.cpp.i
+
+Interpreter.s: Interpreter.cpp.s
+
+.PHONY : Interpreter.s
+
+# target to generate assembly for a file
+Interpreter.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1_Starter_Code.dir/build.make CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.s
+.PHONY : Interpreter.cpp.s
 
 LComAutomaton.o: LComAutomaton.cpp.o
 
@@ -900,9 +927,9 @@ help:
 	@echo "... CommaAutomaton.o"
 	@echo "... CommaAutomaton.i"
 	@echo "... CommaAutomaton.s"
-	@echo "... Database.o"
-	@echo "... Database.i"
-	@echo "... Database.s"
+	@echo "... DataBase.o"
+	@echo "... DataBase.i"
+	@echo "... DataBase.s"
 	@echo "... DatalogProgram.o"
 	@echo "... DatalogProgram.i"
 	@echo "... DatalogProgram.s"
@@ -915,6 +942,9 @@ help:
 	@echo "... IDAutomaton.o"
 	@echo "... IDAutomaton.i"
 	@echo "... IDAutomaton.s"
+	@echo "... Interpreter.o"
+	@echo "... Interpreter.i"
+	@echo "... Interpreter.s"
 	@echo "... LComAutomaton.o"
 	@echo "... LComAutomaton.i"
 	@echo "... LComAutomaton.s"

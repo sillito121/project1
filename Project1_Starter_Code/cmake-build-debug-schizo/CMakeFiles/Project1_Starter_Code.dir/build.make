@@ -408,18 +408,31 @@ CMakeFiles/Project1_Starter_Code.dir/Relation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1_Starter_Code.dir/Relation.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/b/bsillit2/CS236/Fall 2021/project2/Relation.cpp" -o CMakeFiles/Project1_Starter_Code.dir/Relation.cpp.s
 
-CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o: CMakeFiles/Project1_Starter_Code.dir/flags.make
-CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o: ../Database.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/b/bsillit2/CS236/Fall 2021/project2/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o -c "/users/guest/b/bsillit2/CS236/Fall 2021/project2/Database.cpp"
+CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o: CMakeFiles/Project1_Starter_Code.dir/flags.make
+CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o: ../DataBase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/b/bsillit2/CS236/Fall 2021/project2/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o -c "/users/guest/b/bsillit2/CS236/Fall 2021/project2/DataBase.cpp"
 
-CMakeFiles/Project1_Starter_Code.dir/Database.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project1_Starter_Code.dir/Database.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/b/bsillit2/CS236/Fall 2021/project2/Database.cpp" > CMakeFiles/Project1_Starter_Code.dir/Database.cpp.i
+CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/b/bsillit2/CS236/Fall 2021/project2/DataBase.cpp" > CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.i
 
-CMakeFiles/Project1_Starter_Code.dir/Database.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1_Starter_Code.dir/Database.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/b/bsillit2/CS236/Fall 2021/project2/Database.cpp" -o CMakeFiles/Project1_Starter_Code.dir/Database.cpp.s
+CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/b/bsillit2/CS236/Fall 2021/project2/DataBase.cpp" -o CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.s
+
+CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o: CMakeFiles/Project1_Starter_Code.dir/flags.make
+CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o: ../Interpreter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/b/bsillit2/CS236/Fall 2021/project2/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o -c "/users/guest/b/bsillit2/CS236/Fall 2021/project2/Interpreter.cpp"
+
+CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/b/bsillit2/CS236/Fall 2021/project2/Interpreter.cpp" > CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.i
+
+CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/b/bsillit2/CS236/Fall 2021/project2/Interpreter.cpp" -o CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.s
 
 # Object files for target Project1_Starter_Code
 Project1_Starter_Code_OBJECTS = \
@@ -450,7 +463,8 @@ Project1_Starter_Code_OBJECTS = \
 "CMakeFiles/Project1_Starter_Code.dir/Tuple.cpp.o" \
 "CMakeFiles/Project1_Starter_Code.dir/Header.cpp.o" \
 "CMakeFiles/Project1_Starter_Code.dir/Relation.cpp.o" \
-"CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o"
+"CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o" \
+"CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o"
 
 # External object files for target Project1_Starter_Code
 Project1_Starter_Code_EXTERNAL_OBJECTS =
@@ -482,10 +496,11 @@ Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/Rule.cpp.o
 Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/Tuple.cpp.o
 Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/Header.cpp.o
 Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/Relation.cpp.o
-Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/Database.cpp.o
+Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/DataBase.cpp.o
+Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/Interpreter.cpp.o
 Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/build.make
 Project1_Starter_Code: CMakeFiles/Project1_Starter_Code.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/users/guest/b/bsillit2/CS236/Fall 2021/project2/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable Project1_Starter_Code"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/users/guest/b/bsillit2/CS236/Fall 2021/project2/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable Project1_Starter_Code"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Project1_Starter_Code.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

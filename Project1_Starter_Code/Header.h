@@ -20,7 +20,7 @@ public:
     void toString(int i);
     unsigned int size();
     void rename(unsigned int i,std::string variable);
-    void project(unsigned int i);
+    void projectHeader(unsigned int i);
     bool checkSelect(std::string varCheck);
     int matchIndex(std::string varCheck);
     std::vector<std::string> getAttributes();

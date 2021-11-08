@@ -26,7 +26,7 @@ void Header::rename(unsigned int i, std::string variable) {
     attributes[i]=variable;
 }
 
-void Header::project(unsigned int i) {
+void Header::projectHeader(unsigned int i) {
     attributes.erase(attributes.begin()+i);
 }
 

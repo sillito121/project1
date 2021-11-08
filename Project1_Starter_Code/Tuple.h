@@ -18,7 +18,7 @@ public:
     }
     unsigned int valSize();
     void toString(int i);
-    void project(int i);
+    void projectTuple(int i);
 };
 
 
