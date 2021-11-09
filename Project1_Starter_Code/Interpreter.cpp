@@ -74,10 +74,12 @@ Relation* Interpreter::evaluatePredicate(Predicate *query) {
             if(evalName->checkSelect(parameters[i]->getString()) && (i != 0)){
                 //Get the index of the Variable that it matches
                 int index = evalName->matchIndex(parameters[i]->getString());
-                //call select type 2 with the current and matching Variable.
-                evalName->select((i-deleteIndex),index,parameters[i]->getString());
+                //call select type 2 with the current and matching Variable
+                evalName->select((i - deleteIndex), index, parameters[i]->getString());
                 //markPlace.erase(markPlace.begin()+i);
-                deleteIndex++;
+                if( i != markPlace.size()-1){
+                    deleteIndex++;
+                }
             }else{
                 int rVal = i-deleteIndex;
                 evalName->rename(rVal, parameters[i]->getString());

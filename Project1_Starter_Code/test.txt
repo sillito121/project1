@@ -1,15 +1,16 @@
 # COPYRIGHT © BRIGHAM YOUNG UNIVERSITY CS 236
 # FOR USE ONLY DURING SUMMER 2021 SEMESTER
 Schemes:
-name(a,b,c,d)
+   siblings(W,X,Y,Z)
+
 Facts:
-name('1','1','1','1').
-name('2','1','1','1').
-name('2','2','1','1').
-name('2','2','2','1').
-name('2','2','3','3').
+   siblings('George Foreman','George Foreman','George Foreman','George Foreman').
+   siblings('Tod','Tod','George Foreman','Tod').
+
 Rules:
+   childOf(X,Y):-childOf(X,Z),marriedTo(Y,Z).
+   marriedTo(X,Y):-marriedTo(Y,X).
+
 Queries:
-name(p,p,'1',q)?
-
-
+   siblings(A,B,B,A)?
+   siblings(A,C,'George Foreman',A)?

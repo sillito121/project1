@@ -69,7 +69,7 @@ void Relation::select(unsigned int i, unsigned int j, std::string variable) {
             itr++;
         }
     }
-    rename(i,variable);
+    rename(i,variable); // here is the problem right here.
     project(i);
 }
 void Relation::rename(unsigned int i, std::string variable) {
