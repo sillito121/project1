@@ -166,8 +166,8 @@ Relation * Interpreter::naturalJoin(Rule* r) {
 
 Relation *Interpreter::join(Relation *body1, Relation *body2) {
 
-    std::vector<int> alpha;
-    std::vector<int> beta;
+    std::vector<unsigned int> alpha;
+    std::vector<unsigned int> beta;
 
     for(unsigned int i=0; i<body1->getHeader()->getAttributes().size();i++){
         for(unsigned int j=0; j<body2->getHeader()->getAttributes().size();j++){
@@ -190,7 +190,7 @@ Relation *Interpreter::join(Relation *body1, Relation *body2) {
     //find tuples that have matching indexes
     for(Tuple tupBody1: body1->getAllTuples()){
         for(Tuple tupBody2: body2->getAllTuples()){
-            int matches = 0;
+            unsigned int matches = 0;
             for(unsigned int i=0; i<alpha.size();i++){
                 if(tupBody1.getString(alpha[i]) == tupBody2.getString(beta[i])){
                     matches++;
@@ -227,7 +227,7 @@ Header *Interpreter::combineHeader(Relation *body1, Relation* body2) {
     return header;
 }
 
-Tuple Interpreter::combineTuple(Tuple tupOne, Tuple tupTwo, std::vector<int> deleteIndex) {
+Tuple Interpreter::combineTuple(Tuple tupOne, Tuple tupTwo, std::vector<unsigned int> deleteIndex) {
     std::vector<std::string> tupleMaker1 = tupOne.getValues();
     std::vector<std::string> tupleMaker2 = tupTwo.getValues();
     for(int i=deleteIndex.size()-1; i>=0;i--){
