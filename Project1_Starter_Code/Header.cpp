@@ -54,4 +54,15 @@ std::vector<std::string> Header::getAttributes() {
     return attributes;
 }
 
+void Header::rename(std::vector<std::string> attributes) {
+    if(attributes.size() != this->attributes.size()){
+        for(unsigned int i=0;i< this->attributes.size();i++){
+            this->attributes[i]=attributes[i];
+        }
+    }else{
+        this->attributes = attributes;
+    }
+
+}
+
 

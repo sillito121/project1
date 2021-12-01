@@ -38,6 +38,32 @@ void Relation::toString() {
     }
 }
 
+void Relation::Print() {
+
+
+    std::set<Tuple>::iterator setItr = tuples.begin();
+    for (unsigned int i = 0; i < tuples.size(); i++){
+        Tuple tempTuple = *setItr;
+        if(tempTuple.valSize() == 0){
+            return;
+        }
+        std::cout<<"  ";
+        for (unsigned int j = 0; j < header->size(); j++){
+            header->toString(j);
+            std::cout<<"=";
+            tempTuple.toString(j);
+            if(j!=header->size()-1){
+                std::cout<<", ";
+            }
+        }
+        if(i!=tuples.size()-1) {
+            setItr++;
+        }
+        std::cout<<std::endl;
+    }
+}
+
+
 std::string Relation::getName() {
     return name;
 }
@@ -48,6 +74,8 @@ void Relation::setTuple(Tuple tuple) {
 
 void Relation::select(unsigned int i, std::string constant) {
     std::set<Tuple>::iterator itr= tuples.begin();
+
+
     while(itr != tuples.end()){
         Tuple temp = *itr;
         if(temp.getVal(i)!=constant){
@@ -120,9 +148,30 @@ void Relation::setAllTuples(std::set<Tuple> tuples) {
 
 }
 
+void Relation::addTuples(std::set<Tuple> tuples) {
+    std::set<Tuple>::iterator itr= tuples.begin();
+    while(itr != tuples.end()){
+        Tuple temp = *itr;
+        this->tuples.insert(temp);
+        itr++;
+    }
+
+}
 Header *Relation::getHeader() {
     return header;
 }
+
+int Relation::tupleNum() {
+    return tuples.size();
+}
+
+void Relation::setName(std::string name) {
+    this->name=name;
+
+}
+
+
+
 
 
 

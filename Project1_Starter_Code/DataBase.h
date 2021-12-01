@@ -20,7 +20,11 @@ public:
 
     void fillMap(std::string name, Relation* relation);
     void toString();
+    void toString(std::string name);
     Relation* find(std::string name);
+    void addTuplesTo(std::set<Tuple> tuples, std::string name);
+    std::vector<std::string> getHeader(std::string name);
+    std::set<Tuple> unique(std::set<Tuple> tuples, std::string name);
 
 };
 

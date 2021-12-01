@@ -20,11 +20,14 @@ public:
     ~Relation(){};
 
     void toString();
+    void Print();
     std::string getName();
+    void setName(std::string name);
     Header* getHeader();
     std::set<Tuple> getAllTuples();
     void setAllTuples(std::set<Tuple> tuples);
     void setTuple(Tuple tuple);
+    void addTuples(std::set<Tuple> tuples);
     void select(unsigned int i, std::string constant);
     void select(unsigned int i, unsigned int j, std::string variable);
     void rename(unsigned int i, std::string variable);
@@ -32,6 +35,9 @@ public:
     void projectVec(std::vector<int> markPlace, int deleter);
     bool checkSelect(std::string varCheck);
     int matchIndex(std::string varCheck);
+    int tupleNum();
+
+
 
 };
 

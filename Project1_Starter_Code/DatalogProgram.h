@@ -21,6 +21,7 @@ public:
     void buildDatabase();
     std::vector<Predicate*> getSchemes();
     std::vector<Predicate*> getFacts();
+    std::vector<Rule*> getRules();
     std::vector<Predicate*> getQueries();
 
 

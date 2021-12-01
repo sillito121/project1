@@ -19,6 +19,16 @@ void Rule::toString() {
         predicates[i]->toString();
         if(i!=predicates.size()-1){
             std::cout<<",";
+        } else{
+            std::cout<<".";
         }
     }
+}
+
+std::vector<Predicate *> Rule::getBody() {
+    return predicates;
+}
+
+Predicate *Rule::getHead() {
+    return headPredicate;
 }

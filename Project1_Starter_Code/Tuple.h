@@ -19,6 +19,8 @@ public:
     unsigned int valSize();
     void toString(int i);
     void projectTuple(int i);
+    std::string getString(int i);
+    std::vector<std::string> getValues();
 };
 
 

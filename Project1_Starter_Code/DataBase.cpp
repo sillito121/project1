@@ -28,4 +28,34 @@ Relation* DataBase::find(std::string name) {
     return find;
 }
 
+void DataBase::addTuplesTo(std::set<Tuple> tuples, std::string name) {
+    auto itr = dataMap.find(name);
+    itr->second->addTuples(tuples);
+}
+
+void DataBase::toString(std::string name) {
+    auto itr = dataMap.find(name);
+    Relation *find = itr->second;
+    find->toString();
+}
+
+std::vector<std::string> DataBase::getHeader(std::string name) {
+    auto itr = dataMap.find(name);
+    Relation *find = itr->second;
+
+    return find->getHeader()->getAttributes();
+}
+
+std::set<Tuple> DataBase::unique(std::set <Tuple> tuples, std::string name) {
+    std::set<Tuple> finder = find(name)->getAllTuples();
+    std::set<Tuple> uniqueTup;
+    for(Tuple t: tuples){
+        if(finder.insert(t).second){
+            uniqueTup.insert(t);
+        }
+    }
+
+    return uniqueTup;
+}
+
 

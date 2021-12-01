@@ -34,3 +34,11 @@ void Tuple::projectTuple(int i) {
 unsigned int Tuple::valSize() {
     return values.size();
 }
+
+std::string Tuple::getString(int i) {
+    return values[i];
+}
+
+std::vector<std::string> Tuple::getValues() {
+    return values;
+}

@@ -293,6 +293,8 @@ void Parser::parseQueryList() {
 void Parser::Interpret() {
     Interpreter* interpreter = new Interpreter(dataLog);
     interpreter->build();
+    std::vector<Rule*> rules = dataLog->getRules();
+    interpreter->evaluateRules(rules);
     interpreter->evaluatePredicate(dataLog->getQueries());
 
 }

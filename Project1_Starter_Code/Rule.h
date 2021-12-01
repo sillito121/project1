@@ -18,6 +18,8 @@ public:
     void toString();
     void pushParam(Predicate* predicate);
     void setHead(Predicate* predicate);
+    std::vector<Predicate*> getBody();
+    Predicate* getHead();
 
 };
 
