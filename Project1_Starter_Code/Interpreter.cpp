@@ -152,12 +152,10 @@ Relation * Interpreter::naturalJoin(Rule* r) {
         Relation* body1 = evaluatePredicate(rules[0]);
         int i = 0;
 
-        while(!body1->getAllTuples().empty()){
-            r->toString();
+        for(unsigned int i=0;i<rules.size()-1;i++){
             Relation* finalBody = join(body1,evaluatePredicate(rules[i+1]));
             finalBody = matchHeadPred(finalBody, r->getHead());
             body1 = finalBody;
-            i++;
         }
 
         return body1;
