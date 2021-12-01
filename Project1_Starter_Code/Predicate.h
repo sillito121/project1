@@ -21,7 +21,7 @@ public:
     void toString();
     void setPredicate(Token* token);
     void fill(Token* token);
-    int getSize();
+    unsigned int getSize();
     std::string getName();
     std::vector<std::string> getString();
     std::vector<Parameter*> getParameters();

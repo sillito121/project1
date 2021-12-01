@@ -34,7 +34,7 @@ void Predicate::toString() {
 
 }
 
-int Predicate::getSize() {
+unsigned int Predicate::getSize() {
     return parameters.size();
 }
 
