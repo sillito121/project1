@@ -150,7 +150,6 @@ Relation * Interpreter::naturalJoin(Rule* r) {
         return finalBody;
     } else{
         Relation* body1 = evaluatePredicate(rules[0]);
-        int i = 0;
 
         for(unsigned int i=0;i<rules.size()-1;i++){
             Relation* finalBody = join(body1,evaluatePredicate(rules[i+1]));
