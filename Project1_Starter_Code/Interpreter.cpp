@@ -146,7 +146,6 @@ Relation * Interpreter::naturalJoin(Rule* r) {
     if(r->getBody().size() == 2){
         Relation* finalBody = join(evaluatePredicate(rules[0]),evaluatePredicate(rules[1]));
         finalBody = matchHeadPred(finalBody, r->getHead());
-        //dataBase->addTuplesTo(finalBody->getAllTuples(), r->getHead()->getName());
         return finalBody;
     } else{
         Relation* body1 = evaluatePredicate(rules[0]);
@@ -300,18 +299,19 @@ Relation *Interpreter::reOrder(Relation *relate, std::vector<std::string> headAr
 
     Header* header = new Header(headArg);
     Relation* orderedRelate = new Relation(header,relate->getName());
-    //create columns
-    std::vector<std::set<Tuple>> columns;
+
     std::vector<std::string>relateArg = relate->getHeader()->getAttributes();
     for(unsigned int i=0;i<headArg.size();i++){
         for(unsigned int j=0;j<relateArg.size();j++){
             if(headArg[i]==relateArg[j]){
-
                 for(Tuple t: relate->getAllTuples()){
                     Tuple tMod;
                     tMod.buildTuple(t.swap(i,j));
                     orderedRelate->setTuple(tMod);
                 }
+            }
+            if(orderedRelate->getAllTuples().size()==relate->getAllTuples().size()){
+                return orderedRelate;
             }
         }
     }
