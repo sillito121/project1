@@ -40,11 +40,13 @@ private:
     void toString();
     Relation * naturalJoin(Rule* r);
     Relation* join(Relation* body1,Relation* body2);
-    Tuple combineTuple(Tuple tupOne, Tuple tupTwo, std::vector<unsigned int> deleteIndex);
+    static Tuple combineTuple(Tuple tupOne, Tuple tupTwo, std::vector<unsigned int> deleteIndex);
     Tuple combineTuple(Tuple tuple1, Tuple tuple2);
     Header* combineHeader(Relation* body1, Relation* body2);
     Relation * matchHeadPred(Relation *finalBody, Predicate *headPred);
     Relation* crossProduct(Relation* body1,Relation* body2);
+    static Relation* reOrder(Relation* relate, std::vector<std::string> headArg);
+
 
 
 };

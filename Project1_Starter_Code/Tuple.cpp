@@ -42,3 +42,11 @@ std::string Tuple::getString(int i) {
 std::vector<std::string> Tuple::getValues() {
     return values;
 }
+
+std::vector<std::string> Tuple::swap(unsigned int i, unsigned int j) {
+    std::string temp;
+    temp = values[i];
+    values[i] = values[j];
+    values[j] = temp;
+    return values;
+}

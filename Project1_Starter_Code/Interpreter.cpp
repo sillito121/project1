@@ -270,8 +270,12 @@ Relation * Interpreter::matchHeadPred(Relation *finalBody, Predicate *headPred) 
     }
     //dataBase->getHeader(headPred->getName());
     //check
-    finalBody->getHeader()->rename(dataBase->getHeader(headPred->getName()));
     finalBody->setName(headPred->getName());
+    //reorder
+    finalBody = reOrder(finalBody,headPred->getString());
+
+    finalBody->getHeader()->rename(dataBase->getHeader(headPred->getName()));
+
 
 
 
@@ -287,6 +291,33 @@ Relation *Interpreter::crossProduct(Relation *body1, Relation *body2) {
         }
     }
     return crossP;
+}
+
+Relation *Interpreter::reOrder(Relation *relate, std::vector<std::string> headArg) {
+    if(relate->getHeader()->getAttributes()==headArg){
+        return relate;
+    }
+
+    Header* header = new Header(headArg);
+    Relation* orderedRelate = new Relation(header,relate->getName());
+    //create columns
+    std::vector<std::set<Tuple>> columns;
+    std::vector<std::string>relateArg = relate->getHeader()->getAttributes();
+    for(unsigned int i=0;i<headArg.size();i++){
+        for(unsigned int j=0;j<relateArg.size();j++){
+            if(headArg[i]==relateArg[j]){
+
+                for(Tuple t: relate->getAllTuples()){
+                    Tuple tMod;
+                    tMod.buildTuple(t.swap(i,j));
+                    orderedRelate->setTuple(tMod);
+                }
+            }
+        }
+    }
+
+
+    return orderedRelate;
 }
 
 

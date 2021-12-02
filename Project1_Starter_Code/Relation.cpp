@@ -3,6 +3,7 @@
 //
 
 #include "Relation.h"
+#include "Predicate.h"
 
 Relation::Relation(Header *header, std::string name) {
     this->header=header;
@@ -169,6 +170,22 @@ void Relation::setName(std::string name) {
     this->name=name;
 
 }
+
+std::set<Tuple> Relation::getColumn(unsigned int i) {
+    std::set<Tuple>::iterator itr= tuples.begin();
+    std::set<Tuple> projectTuple;
+
+    while(itr != tuples.end()){
+        Tuple temp = *itr;
+        temp.projectTuple(i);
+        projectTuple.insert(temp);
+        itr++;
+    }
+
+    return projectTuple;
+}
+
+
 
 
 

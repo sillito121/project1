@@ -21,6 +21,7 @@ public:
     void projectTuple(int i);
     std::string getString(int i);
     std::vector<std::string> getValues();
+    std::vector<std::string> swap(unsigned int i, unsigned int j);
 };
 
 

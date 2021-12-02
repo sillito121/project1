@@ -7,6 +7,7 @@
 #include <set>
 #include "Tuple.h"
 #include "Header.h"
+#include "Predicate.h"
 
 
 class Relation {
@@ -14,6 +15,8 @@ private:
     std::set<Tuple> tuples;
     std::string name;
     Header *header;
+
+
 
 public:
     Relation(Header* header, std::string name);
@@ -35,6 +38,9 @@ public:
     void projectVec(std::vector<int> markPlace, int deleter);
     bool checkSelect(std::string varCheck);
     int matchIndex(std::string varCheck);
+    std::set<Tuple> getColumn(unsigned int i);
+
+
     int tupleNum();
 
 
