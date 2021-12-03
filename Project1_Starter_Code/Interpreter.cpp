@@ -256,7 +256,7 @@ Relation * Interpreter::matchHeadPred(Relation *finalBody, Predicate *headPred) 
     }
     if(finalBody->getHeader()->size() > headPred->getSize()){
         //does it have all the needed elements?
-        int matches = 0;
+        unsigned int matches = 0;
         for(unsigned int i=0; i<finalBody->getHeader()->size();i++){
             for(unsigned int j=0; j<headPred->getSize();j++){
                 if(headPred->getString()[j] == finalBody->getHeader()->getAttributes()[i]){
