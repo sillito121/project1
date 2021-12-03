@@ -39,9 +39,8 @@ public:
     bool checkSelect(std::string varCheck);
     int matchIndex(std::string varCheck);
     std::set<Tuple> getColumn(unsigned int i);
-
-
-    int tupleNum();
+    int tupleLength();
+    void headerSwap(int i , int j);
 
 
 

@@ -106,7 +106,7 @@ void Relation::rename(unsigned int i, std::string variable) {
 }
 
 void Relation::project(unsigned int i) {
-    std::set<Tuple>::iterator itr= tuples.begin();
+    auto itr= tuples.begin();
     std::set<Tuple> projectTuple;
 
     while(itr != tuples.end()){
@@ -162,8 +162,11 @@ Header *Relation::getHeader() {
     return header;
 }
 
-int Relation::tupleNum() {
-    return tuples.size();
+int Relation::tupleLength() {
+    auto t = tuples.begin();
+    Tuple temp = *t;
+    int length = temp.valSize();
+    return length;
 }
 
 void Relation::setName(std::string name) {
@@ -183,6 +186,10 @@ std::set<Tuple> Relation::getColumn(unsigned int i) {
     }
 
     return projectTuple;
+}
+
+void Relation::headerSwap(int i, int j) {
+    this->header->swap(i,j);
 }
 
 

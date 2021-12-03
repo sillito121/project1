@@ -65,4 +65,10 @@ void Header::rename(std::vector<std::string> attributes) {
 
 }
 
+void Header::swap(int i, int j) {
+    std::string temp = attributes[i];
+    attributes[i] = attributes[j];
+    attributes[j] = temp;
+}
+
 

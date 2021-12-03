@@ -144,14 +144,14 @@ Relation * Interpreter::naturalJoin(Rule* r) {
     std:: vector<Predicate*>rules=r->getBody();
 
     if(r->getBody().size() == 2){
-        Relation* finalBody = join(evaluatePredicate(rules[0]),evaluatePredicate(rules[1]));
+        Relation* finalBody = join(evaluatePredicate(rules[0]), evaluatePredicate(rules[1]), std::string());
         finalBody = matchHeadPred(finalBody, r->getHead());
         return finalBody;
     } else{
         Relation* body1 = evaluatePredicate(rules[0]);
 
         for(unsigned int i=0;i<rules.size()-1;i++){
-            Relation* finalBody = join(body1,evaluatePredicate(rules[i+1]));
+            Relation* finalBody = join(body1, evaluatePredicate(rules[i + 1]), r->getHead()->getName());
             finalBody = matchHeadPred(finalBody, r->getHead());
             body1 = finalBody;
         }
@@ -160,7 +160,7 @@ Relation * Interpreter::naturalJoin(Rule* r) {
     }
 }
 
-Relation *Interpreter::join(Relation *body1, Relation *body2) {
+Relation *Interpreter::join(Relation *body1, Relation *body2, std::string name) {
 
     std::vector<unsigned int> alpha;
     std::vector<unsigned int> beta;
@@ -175,12 +175,12 @@ Relation *Interpreter::join(Relation *body1, Relation *body2) {
     }
 
     //combine the headers and create new relation to return
-    Relation* newRelate = new Relation(combineHeader(body1,body2),"new");
+    Relation* newRelate = new Relation(combineHeader(body1,body2),name);
     std::set<Tuple> newTuple;
 
     if(alpha.empty()){
         //crossProduct
-        return crossProduct(body1,body2);
+        return crossProduct(body1, body2, name);
     }
 
     //find tuples that have matching indexes
@@ -254,6 +254,23 @@ Relation * Interpreter::matchHeadPred(Relation *finalBody, Predicate *headPred) 
     if(finalBody->getHeader()->size() < headPred->getSize()){
         return finalBody;
     }
+    if(finalBody->getHeader()->size() > headPred->getSize()){
+        //does it have all the needed elements?
+        int matches = 0;
+        for(unsigned int i=0; i<finalBody->getHeader()->size();i++){
+            for(unsigned int j=0; j<headPred->getSize();j++){
+                if(headPred->getString()[j] == finalBody->getHeader()->getAttributes()[i]){
+                    matches++;
+                }
+            }
+        }
+        if(matches != headPred->getSize()){
+            return finalBody;
+        }
+
+    }
+
+
 
     for(unsigned int i=0; i<finalBody->getHeader()->size();i++){
         bool match = false;
@@ -263,8 +280,13 @@ Relation * Interpreter::matchHeadPred(Relation *finalBody, Predicate *headPred) 
             }
         }
         if(!match){
-            finalBody->project(i);
-            i--;
+            if(finalBody->getHeader()->getAttributes().size() == 0){
+                break;
+            }else{
+                finalBody->project(i);
+                i--;
+            }
+
         }
     }
     //dataBase->getHeader(headPred->getName());
@@ -281,8 +303,8 @@ Relation * Interpreter::matchHeadPred(Relation *finalBody, Predicate *headPred) 
     return finalBody;
 }
 
-Relation *Interpreter::crossProduct(Relation *body1, Relation *body2) {
-    Relation* crossP = new Relation(combineHeader(body1,body2),"new");
+Relation *Interpreter::crossProduct(Relation *body1, Relation *body2, std::string name) {
+    Relation* crossP = new Relation(combineHeader(body1,body2),name);
 
     for(Tuple combTuple1: body1->getAllTuples()){
         for(Tuple combTuple2: body2->getAllTuples()){
@@ -293,31 +315,39 @@ Relation *Interpreter::crossProduct(Relation *body1, Relation *body2) {
 }
 
 Relation *Interpreter::reOrder(Relation *relate, std::vector<std::string> headArg) {
-    if(relate->getHeader()->getAttributes()==headArg){
+
+    if((relate->getHeader()->getAttributes()==headArg)||(relate->getHeader()->getAttributes().size() != headArg.size())){
         return relate;
     }
 
-    Header* header = new Header(headArg);
-    Relation* orderedRelate = new Relation(header,relate->getName());
 
+    std::set<Tuple> tuples;
     std::vector<std::string>relateArg = relate->getHeader()->getAttributes();
+    int n = 0;
     for(unsigned int i=0;i<headArg.size();i++){
-        for(unsigned int j=0;j<relateArg.size();j++){
+        tuples.clear();
+        for(unsigned int j=n;j<relateArg.size();j++){
             if(headArg[i]==relateArg[j]){
                 for(Tuple t: relate->getAllTuples()){
                     Tuple tMod;
                     tMod.buildTuple(t.swap(i,j));
-                    orderedRelate->setTuple(tMod);
+                    tuples.insert(tMod);
                 }
-            }
-            if(orderedRelate->getAllTuples().size()==relate->getAllTuples().size()){
-                return orderedRelate;
+                std::string temp = relateArg[i];
+                relateArg[i] = relateArg[j];
+                relateArg[j] = temp;
+
+                relate->headerSwap(i,j);
+                relate->setAllTuples(tuples);
+                n++;
+                j=relateArg.size()-1;
+
             }
         }
     }
 
 
-    return orderedRelate;
+    return relate;
 }
 
 

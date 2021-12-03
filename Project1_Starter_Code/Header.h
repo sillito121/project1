@@ -25,6 +25,7 @@ public:
     int matchIndex(std::string varCheck);
     std::vector<std::string> getAttributes();
     void rename(std::vector<std::string> attributes);
+    void swap(int i,int j);
 
 };
 
